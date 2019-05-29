@@ -72,16 +72,16 @@ func main() {
 		os.Setenv("SYSTEM_ID", "2dda8512f170683e224f17ebb2295aaf")
 	}
 	if os.Getenv("MONGO_URL") == "" {
-		os.Setenv("MONGO_URL", "docker.lan.smclinic.ru")
+		os.Setenv("MONGO_URL", "docker.rutt.io")
 	}
 	if os.Getenv("AMQP_URL") == "" {
-		os.Setenv("AMQP_URL", "amqp://mqadmin:mqadmin@dev-rabbit-1.lan.smclinic.ru//")
+		os.Setenv("AMQP_URL", "amqp://mqadmin:mqadmin@dev-rabbit-1.rutt.io//")
 	}
 	if os.Getenv("REDIS_URL") == "" {
-		os.Setenv("REDIS_URL", "docker.lan.smclinic.ru:6379")
+		os.Setenv("REDIS_URL", "docker.rutt.io:6379")
 	}
 	if os.Getenv("ELASTICSEARCH_URL") == "" {
-		os.Setenv("ELASTICSEARCH_URL", "http://dev-elastic.lan.smclinic.ru:9200")
+		os.Setenv("ELASTICSEARCH_URL", "http://dev-elastic.rutt.io:9200")
 	}
 
 	log.Println("Connecting redis at " + os.Getenv("REDIS_URL"))
